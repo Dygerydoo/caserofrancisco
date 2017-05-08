@@ -1,0 +1,32 @@
+// *************************************
+//
+//   Layout
+//   -> App containers configuration
+//
+// *************************************
+
+// ---------------------------
+// Main container
+// ---------------------------
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  // Following prevent IOS Safari bar to hide/appear when touched at bottom
+  overflow-y: scroll;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.app-Layout_Main {
+  margin: auto;
+
+  @include mq(desktop) {
+    min-width: 900px;
+    max-width: $grid-max-width + $grid-gutter;
+    padding: 0 1em;
+  }
+}
